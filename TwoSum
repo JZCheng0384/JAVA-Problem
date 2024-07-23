@@ -1,9 +1,13 @@
 import java.util.HashMap;
+// If we have 9 as the target. Once we put the array as a Map
+// we can easily to check does any two number that can be add up to the target
+
 
 public class TwoSum {
         public static int[] twoSum(int[] nums, int target) {
-        int res[] = new int[2];
+        int res[] = new int[2]; //store answer
         HashMap<Integer, Integer> map = new HashMap<>();
+        // The idea is search for remainder that exsit inside the array, if yes, then print out the index of two
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i])) {
                 res[0] = i;
