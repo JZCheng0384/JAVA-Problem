@@ -1,0 +1,29 @@
+//Given an integer n, return true if and only if it is an Armstrong number.
+//The k-digit number n is an Armstrong number if and only if the kth power of each digit sums to n.
+
+
+
+public static void main(String[] args) {
+
+    int number = 153;
+    int sum = 0;
+//the thing we have a copy in here, become after spilt the integer, it will be zero
+//which once you compare the sum and number, it will always false
+
+    int compare = number;
+    int k = (int) Math.floor(Math.log10(n) + 1);
+    while(number != 0){
+        int num1 = (number%10);
+        sum += Math.pow(num1,k);
+        number = number/10;
+        
+    }
+
+    //System.out.println("The origal number will become:"+number);
+
+        if(sum == compare){
+        System.out.println("GET IT");
+        }else{
+         System.out.println("Wrongggg");
+         }
+    }
